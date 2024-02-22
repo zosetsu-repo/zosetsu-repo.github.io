@@ -3,11 +3,11 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: "home"
 
-title: "Keiyoushi"
+title: "Komikku"
 description: "An unofficial repository of extensions for Tachiyomi and variants."
 
 hero:
-  name: "Keiyoushi"
+  name: "Komikku"
   text: ""
   tagline: "An unofficial repository of extensions for Tachiyomi and variants."
   actions:
@@ -16,7 +16,7 @@ hero:
       link: "/docs/guides/getting-started"
     - theme: "alt"
       text: "Star the project"
-      link: "https://github.com/keiyoushi/extensions"
+      link: "https://github.com/komikku-app/extensions"
 
 features:
   - title: "Extensions"

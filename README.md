@@ -1,4 +1,4 @@
-# Keiyoushi website
+# Komikku website
 
 ## Licensing
 Licensed under the Apache License version 2.0, with parts taken from
