@@ -26,7 +26,6 @@ jobs:
         id: import-gpg
         uses: crazy-max/ghaction-import-gpg@v4
         with:
-          workdir: merge-keiyoushi
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           git_user_signingkey: true
