@@ -38,12 +38,12 @@ export default defineConfig({
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/komikku-app/extensions',
+        link: 'https://github.com/komikku-app/',
         ariaLabel: 'Project GitHub',
       },
       {
         icon: 'discord',
-        link: 'https://discord.gg/komikku-app',
+        link: 'https://discord.gg/85jB7V5AJR',
         ariaLabel: 'Discord server',
       },
     ],
