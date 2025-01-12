@@ -30,7 +30,7 @@ jobs:
           version: 7
 
       - name: Setup Node
-        uses: actions/setup-node@1a4442cacd436585916779262731d5b162bc6ec7 # v3
+        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v3
         with:
           node-version: 18
           cache: pnpm
