@@ -4,10 +4,10 @@ title: Redirecting to new extensions page
 head:
   - - meta 
     - http-equiv: refresh
-      content: 0; URL=https://komikku-app.github.io/extensions/
+      content: 0; URL=https://komikku-repo.github.io/extensions/
   - - link
     - rel: canonical
-      href: https://komikku-app.github.io/extensions/ 
+      href: https://komikku-repo.github.io/extensions/ 
 ---
 
 You should be redirected to the extensions listing automatically. If it doesn't

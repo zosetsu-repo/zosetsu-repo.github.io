@@ -16,7 +16,7 @@ hero:
       link: "/docs/guides/getting-started"
     - theme: "alt"
       text: "Star the project"
-      link: "https://github.com/komikku-app/extensions"
+      link: "https://github.com/komikku-repo/extensions"
 
 features:
   - title: "Extensions"

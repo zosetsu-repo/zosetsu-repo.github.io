@@ -38,7 +38,7 @@ export default defineConfig({
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/komikku-app/',
+        link: 'https://github.com/komikku-repo/',
         ariaLabel: 'Project GitHub',
       },
       {
@@ -49,7 +49,7 @@ export default defineConfig({
     ],
     
     editLink: {
-      pattern: 'https://github.com/komikku-app/komikku-app.github.io/edit/main/website/:path',
+      pattern: 'https://github.com/komikku-repo/komikku-repo.github.io/edit/main/website/:path',
       text: 'Help us improve this page',
     },
 
