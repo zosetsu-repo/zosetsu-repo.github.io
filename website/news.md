@@ -2,7 +2,7 @@
 # Copyright (c) The Tachiyomi Open Source Project
 # SPDX-License-Identifier: MPL-2.0
 title: News
-description: Collection of news and announcements about Komikku.
+description: Collection of news and announcements about Tachiyomi Repo.
 lastUpdated: false
 editLink: false
 prev: false

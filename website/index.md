@@ -3,20 +3,20 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: "home"
 
-title: "Komikku"
-description: "An unofficial repository of extensions for Tachiyomi and variants."
+title: "Tachiyomi Repo"
+description: "An unofficial repository of extensions for Tachiyomi and variants (Mihon, Komikku)"
 
 hero:
-  name: "Komikku"
+  name: "Tachiyomi Repo"
   text: ""
-  tagline: "An unofficial repository of extensions for Tachiyomi and variants."
+  tagline: "An unofficial repository of extensions for Tachiyomi and variants (Mihon, Komikku)"
   actions:
     - theme: "brand"
       text: "Get started"
       link: "/docs/guides/getting-started"
     - theme: "alt"
       text: "Star the project"
-      link: "https://github.com/komikku-repo/extensions"
+      link: "https://github.com/tachiyomi-repo/extensions"
 
 features:
   - title: "Extensions"

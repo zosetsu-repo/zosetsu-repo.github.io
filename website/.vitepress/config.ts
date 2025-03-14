@@ -21,8 +21,8 @@ const hostname: string = env.VITE_HOSTNAME || 'http://localhost:4173';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Komikku",
-  description: "An unofficial repository of extensions for Tachiyomi and variants.",
+  title: "Tachiyomi Repo",
+  description: "An unofficial repository of extensions for Tachiyomi and variants (Mihon, Komikku)",
   cleanUrls: true,
   transformHead: (context) => {
     context.head.push(['meta', { name: 'robots', content: 'noindex, nofollow' }]);
@@ -38,7 +38,7 @@ export default defineConfig({
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/komikku-repo/',
+        link: 'https://github.com/tachiyomi-repo/',
         ariaLabel: 'Project GitHub',
       },
       {
@@ -49,7 +49,7 @@ export default defineConfig({
     ],
     
     editLink: {
-      pattern: 'https://github.com/komikku-repo/komikku-repo.github.io/edit/main/website/:path',
+      pattern: 'https://github.com/tachiyomi-repo/tachiyomi-repo.github.io/edit/main/website/:path',
       text: 'Help us improve this page',
     },
 
