@@ -6,6 +6,7 @@ import type { DefaultTheme } from 'vitepress';
 const sidebar: DefaultTheme.SidebarMulti = {
   '/add-repo': defaultSidebar(),
   '/extensions/': defaultSidebar(),
+  '/extensions-aniyomi/': defaultSidebar(),
   '/news': defaultSidebar(),
   '/docs/': defaultSidebar(),
 };
@@ -14,7 +15,18 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
   return [
     {
       items: [
-        { text: 'Extensions', link: '/extensions/' }
+        { text: 'Tachiyomi Extensions', link: '/extensions/' }
+      ],
+    },
+    {
+      text: 'Frequently asked questions',
+      items: [
+        { text: 'General', link: '/docs/faq/general' },
+      ],   
+    },
+    {
+      items: [
+        { text: 'Aniyomi Extensions', link: '/extensions-aniyomi/' }
       ],
     },
     {

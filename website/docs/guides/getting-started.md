@@ -8,6 +8,7 @@ description: Essential information to help you set up the extension repo.
 <script setup lang="ts">
     import AddRepoButton from "../../.vitepress/theme/components/AddRepoButton.vue";
     import { GITHUB_EXTENSION_REPO, GITHUB_EXTENSION_MIN_JSON } from "../../.vitepress/config/constants";
+    import { GITHUB_EXTENSION_REPO_ANI, GITHUB_EXTENSION_MIN_JSON_ANI } from "../../.vitepress/config/constants";
 </script>
 
 # Getting started
@@ -18,7 +19,8 @@ Essential information to help you set up the extension repo.
 Uninstall all existing extensions. You will not get extension updates otherwise.
 
 ### Adding the repository
-For all modern variants of Tachiyomi (Tachiyomi, TachiyomiSY, TachiyomiJ2K, TachiyomiAZ, Mihon),
+For all modern variants of Tachiyomi (Komikku, TachiyomiSY, TachiyomiJ2K, TachiyomiAZ, Mihon),
+or all modern variants of Aniyomi (Anikku, Animiru, Animetail),
 click the button below to add the repository:
 
 <AddRepoButton />
@@ -26,11 +28,12 @@ click the button below to add the repository:
 ::: details Adding the repo manually
 - Go to <nav to="extension-repos">
 - Select "Add" at the bottom of your screen.
-- Enter <a :href="GITHUB_EXTENSION_MIN_JSON">{{ GITHUB_EXTENSION_MIN_JSON }}</a>.
+- Enter <a :href="GITHUB_EXTENSION_MIN_JSON">{{ GITHUB_EXTENSION_MIN_JSON }}</a> for Tachiyomi variants.
+- Enter <a :href="GITHUB_EXTENSION_MIN_JSON_ANI">{{ GITHUB_EXTENSION_MIN_JSON_ANI }}</a> for Aniyomi variants.
 :::
 
 ### Reinstall the extensions
-Restart Tachiyomi to reload the extension list, then reinstall all extensions.
+Restart Tachiyomi/Aniyomi to reload the extension list, then reinstall all extensions.
 
 ::: tip
 Go to <nav to="migrate"> to see what extensions you are missing.
@@ -40,7 +43,7 @@ Go to <nav to="migrate"> to see what extensions you are missing.
 ### Trouble finding a specific series?
 If you encounter difficulties while searching for a specific series, consider:
 
-- Look up the manga on [Google](https://google.com) or a manga database such as [MangaUpdates](https://www.mangaupdates.com/).
+- Look up the manga/anime on [Google](https://google.com) or a manga/anime database such as [Anilist](https://anilist.co/).
 
 - Double-check your spelling and try again, as some sources might use **Japanese romanized** titles instead of **English** ones.
   > Example: **Boku no Hero Academia** instead of **My Hero Academia**.
