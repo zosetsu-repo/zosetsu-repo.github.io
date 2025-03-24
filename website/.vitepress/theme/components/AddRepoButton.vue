@@ -41,7 +41,7 @@ function handleAnalytics() {
         :href="`tachiyomi://add-repo?url=${encodeURIComponent(GITHUB_EXTENSION_MIN_JSON)}`"
         @click="handleAnalytics"
       >
-        <span class="text">Add repository</span>
+        <span class="text">Add Tachiyoimi repository</span>
       </a>
     </div>
     <span class="version-disclaimer">
