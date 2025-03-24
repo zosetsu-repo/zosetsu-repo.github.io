@@ -7,6 +7,7 @@ description: Essential information to help you set up the extension repo.
 
 <script setup lang="ts">
     import AddRepoButton from "../../.vitepress/theme/components/AddRepoButton.vue";
+    import AddRepoButtonAni from "../../.vitepress/theme/components/AddRepoButtonAni.vue";
     import { GITHUB_EXTENSION_REPO, GITHUB_EXTENSION_MIN_JSON } from "../../.vitepress/config/constants";
     import { GITHUB_EXTENSION_REPO_ANI, GITHUB_EXTENSION_MIN_JSON_ANI } from "../../.vitepress/config/constants";
 </script>
@@ -20,10 +21,13 @@ Uninstall all existing extensions. You will not get extension updates otherwise.
 
 ### Adding the repository
 For all modern variants of Tachiyomi (Komikku, TachiyomiSY, TachiyomiJ2K, TachiyomiAZ, Mihon),
-or all modern variants of Aniyomi (Anikku, Animiru, Animetail),
-click the button below to add the repository:
+
+Or all modern variants of Aniyomi (Anikku, Animiru, Animetail),
+
+Click the button below to add the repository:
 
 <AddRepoButton />
+<AddRepoButtonAni />
 
 ::: details Adding the repo manually
 - Go to <nav to="extension-repos">
@@ -54,4 +58,4 @@ If you encounter difficulties while searching for a specific series, consider:
   > Example: **3-gatsu no Lion** instead of **Sangatsu no Lion**.
 
 - If you still cannot find the series, try searching for a website's extension you've found in
-step 1 in the [extensions](/extensions/) list.
+step 1 in the [Tachiyomi extensions](/extensions/) or [Aniyomi extensions](/extensions-aniyomi/) list.
