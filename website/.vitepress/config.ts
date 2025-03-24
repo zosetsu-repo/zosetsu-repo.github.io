@@ -41,11 +41,6 @@ export default defineConfig({
         link: 'https://github.com/zosetsu-repo/',
         ariaLabel: 'Project GitHub',
       },
-      {
-        icon: 'discord',
-        link: 'https://discord.gg/85jB7V5AJR',
-        ariaLabel: 'Discord server',
-      },
     ],
     
     editLink: {
