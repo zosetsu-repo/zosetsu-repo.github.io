@@ -1,4 +1,4 @@
-# Tachiyomi Repo website
+# Zosetsu website
 
 ## Licensing
 Licensed under the Apache License version 2.0, with parts taken from

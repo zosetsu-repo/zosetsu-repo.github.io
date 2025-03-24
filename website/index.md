@@ -3,11 +3,11 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: "home"
 
-title: "Tachiyomi Repo"
-description: "An unofficial repository of extensions for Tachiyomi and variants (Mihon, Komikku)"
+title: "Zosetsu"
+description: "An unofficial repository of extensions for Tachiyomi and variants."
 
 hero:
-  name: "Tachiyomi Repo"
+  name: "Zosetsu"
   text: ""
   tagline: "An unofficial repository of extensions for Tachiyomi and variants (Mihon, Komikku)"
   actions:
@@ -16,7 +16,7 @@ hero:
       link: "/docs/guides/getting-started"
     - theme: "alt"
       text: "Star the project"
-      link: "https://github.com/tachiyomi-repo/extensions"
+      link: "https://github.com/zosetsu-repo/tachiyomi-extensions"
 
 features:
   - title: "Extensions"
