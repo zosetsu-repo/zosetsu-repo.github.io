@@ -19,12 +19,6 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
       ],
     },
     {
-      text: 'Frequently asked questions',
-      items: [
-        { text: 'General', link: '/docs/faq/general' },
-      ],   
-    },
-    {
       items: [
         { text: 'Aniyomi Extensions', link: '/extensions-aniyomi/' }
       ],

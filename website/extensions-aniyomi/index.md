@@ -10,12 +10,12 @@ next: false
 ---
 
 <script setup lang="ts">
-  import AddRepoButton from "../.vitepress/theme/components/AddRepoButton.vue";
-  import ExtensionsWrapper from "../.vitepress/theme/components/Extensions/ExtensionsWrapper.vue";
+  import AddRepoButtonAni from "../.vitepress/theme/components/AddRepoButtonAni.vue";
+  import ExtensionsWrapperAni from "../.vitepress/theme/components/ExtensionsAni/ExtensionsWrapper.vue";
 </script>
 
 # Extensions
 
-<AddRepoButton />
+<AddRepoButtonAni />
 
-<ExtensionsWrapper />
+<ExtensionsWrapperAni />
