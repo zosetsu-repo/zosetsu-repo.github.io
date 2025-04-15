@@ -28,8 +28,8 @@ function handleAnalytics() {
         Unsupported operating system
       </p>
       <p>
-        <strong>Tachiyomi</strong> is an <strong>Android app</strong> only.
-        Use an <strong>Android device with Tachiyomi installed</strong> to
+        <strong>Mihon</strong> is an <strong>Android app</strong> only.
+        Use an <strong>Android device with Mihon installed</strong> to
         add this extension repo.
       </p>
     </div>
@@ -41,20 +41,12 @@ function handleAnalytics() {
         :href="`tachiyomi://add-repo?url=${encodeURIComponent(GITHUB_EXTENSION_MIN_JSON)}`"
         @click="handleAnalytics"
       >
-        <span class="text">Add Tachiyoimi repository</span>
+        <span class="text">Add Manga repository</span>
       </a>
     </div>
     <span class="version-disclaimer">
       Requires <strong>Tachiyomi 0.15.2</strong> or newer.
     </span>
-    <div class="custom-block danger">
-      <p class="custom-block-title">
-        Caution
-      </p>
-      <p>
-        Exercise caution when using third party extensions.
-      </p>
-    </div>
   </div>
 </template>
 

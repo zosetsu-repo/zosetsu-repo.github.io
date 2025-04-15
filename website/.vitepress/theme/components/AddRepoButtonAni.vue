@@ -41,7 +41,7 @@ function handleAnalytics() {
         :href="`aniyomi://add-repo?url=${encodeURIComponent(GITHUB_EXTENSION_MIN_JSON_ANI)}`"
         @click="handleAnalytics"
       >
-        <span class="text">Add Aniyomi repository</span>
+        <span class="text">Add Anime repository</span>
       </a>
     </div>
     <span class="version-disclaimer">

@@ -1,7 +1,7 @@
 ---
 # SPDX-License-Identifier: Apache-2.0
 title: "Add repository"
-description: "Add this repository to Tachiyomi."
+description: "Add this repository to the app"
 lastUpdated: false
 editLink: false
 prev: false
@@ -10,37 +10,43 @@ next: false
 
 <script setup lang="ts">
     import { onMounted, ref } from "vue";
-    import { GITHUB_EXTENSION_MIN_JSON } from "./.vitepress/config/constants";
+    import { GITHUB_EXTENSION_MIN_JSON, JSDELIVR_EXTENSION_MIN_JSON } from "./.vitepress/config/constants";
 
     const isAndroid = ref(true);
-    const decodedUrl = ref("");
+    const url = ref(GITHUB_EXTENSION_MIN_JSON);
+    const officialRepos = [GITHUB_EXTENSION_MIN_JSON, JSDELIVR_EXTENSION_MIN_JSON]
 
     onMounted(() => {
         isAndroid.value = !!navigator.userAgent.match(/android/i);
-        decodedUrl.value = new URLSearchParams(window.location.search).get("url");    
+        const urlParm = new URLSearchParams(window.location.search).get("url") || GITHUB_EXTENSION_MIN_JSON;
+        const encodedUrl = encodeURIComponent(urlParm);
 
-        const reencodedUrl = encodeURIComponent(decodedUrl.value);
+        if (!officialRepos.includes(urlParm)) {
+            window.location.replace("/");
+            return;
+        }
+
+        url.value = urlParm
+
 
         if (isAndroid.value) {
-            if (decodedUrl == GITHUB_EXTENSION_MIN_JSON) {
-                window.goatcounter?.count?.({
-                    path: "/#add-to-tachiyomi",
-                    title: "Add extension repository",
-                });
-            }
+            window.goatcounter?.count?.({
+                path: "/#add-to-tachiyomi",
+                title: "Add extension repository",
+            });
 
-            window.location.replace(`tachiyomi://add-repo?url=${reencodedUrl}`);
+            window.location.replace(`tachiyomi://add-repo?url=${encodedUrl}`);
         }
     });
 </script>
 
 <div v-if="isAndroid">
-    You should be redirected to Tachiyomi in a moment. Refresh the page if it doesn't work,
+    You should be redirected to Mihon in a moment. Refresh the page if it doesn't work,
     or add the repo manually using this link:
 </div>
 <div v-else>
-    Unsupported operating system. Tachiyomi is an <strong>Android</strong> app only. Please add
+    Unsupported operating system. Mihon is an <strong>Android</strong> app only. Please add
     the repo manually using this link:
 </div>
 
-<a :href="decodedUrl">{{ decodedUrl }}</a>
+<a :href="url">{{ url }}</a>

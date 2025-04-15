@@ -1,7 +1,7 @@
 ---
 # SPDX-License-Identifier: Apache-2.0
 title: "Add repository"
-description: "Add this repository to Aniyomi."
+description: "Add this repository to the app"
 lastUpdated: false
 editLink: false
 prev: false
@@ -10,26 +10,32 @@ next: false
 
 <script setup lang="ts">
     import { onMounted, ref } from "vue";
-    import { GITHUB_EXTENSION_MIN_JSON_ANI } from "./.vitepress/config/constants";
+    import { GITHUB_EXTENSION_MIN_JSON_ANI, JSDELIVR_EXTENSION_MIN_JSON_ANI } from "./.vitepress/config/constants";
 
     const isAndroid = ref(true);
-    const decodedUrl = ref("");
+    const url = ref(GITHUB_EXTENSION_MIN_JSON_ANI);
+    const officialRepos = [GITHUB_EXTENSION_MIN_JSON_ANI, JSDELIVR_EXTENSION_MIN_JSON_ANI]
 
     onMounted(() => {
         isAndroid.value = !!navigator.userAgent.match(/android/i);
-        decodedUrl.value = new URLSearchParams(window.location.search).get("url");    
+        const urlParm = new URLSearchParams(window.location.search).get("url") || GITHUB_EXTENSION_MIN_JSON_ANI;
+        const encodedUrl = encodeURIComponent(urlParm);
 
-        const reencodedUrl = encodeURIComponent(decodedUrl.value);
+        if (!officialRepos.includes(urlParm)) {
+            window.location.replace("/");
+            return;
+        }
+
+        url.value = urlParm
+
 
         if (isAndroid.value) {
-            if (decodedUrl == GITHUB_EXTENSION_MIN_JSON_ANI) {
-                window.goatcounter?.count?.({
-                    path: "/#add-to-aniyomi",
-                    title: "Add extension repository",
-                });
-            }
+            window.goatcounter?.count?.({
+                path: "/#add-to-aniyomi",
+                title: "Add extension repository",
+            });
 
-            window.location.replace(`aniyomi://add-repo?url=${reencodedUrl}`);
+            window.location.replace(`aniyomi://add-repo?url=${encodedUrl}`);
         }
     });
 </script>
@@ -43,4 +49,4 @@ next: false
     the repo manually using this link:
 </div>
 
-<a :href="decodedUrl">{{ decodedUrl }}</a>
+<a :href="url">{{ url }}</a>

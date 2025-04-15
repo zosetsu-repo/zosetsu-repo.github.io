@@ -1,7 +1,7 @@
 ---
 # Copyright (c) The Tachiyomi Open Source Project
 # SPDX-License-Identifier: MPL-2.0
-title: Aniyomi Extensions
+title: Anime Extensions
 description: Browse and download sources for Aniyomi and variants.
 lastUpdated: false
 editLink: false

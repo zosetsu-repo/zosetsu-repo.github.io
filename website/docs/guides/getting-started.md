@@ -20,7 +20,7 @@ Essential information to help you set up the extension repo.
 Uninstall all existing extensions. You will not get extension updates otherwise.
 
 ### Adding the repository
-For all modern variants of Tachiyomi (Komikku, TachiyomiSY, TachiyomiJ2K, TachiyomiAZ, Mihon),
+For all modern variants of Mihon (Komikku, TachiyomiSY, Yokai, TachiyomiJ2K, TachiyomiAZ),
 
 Or all modern variants of Aniyomi (Anikku, Animiru, Animetail),
 
@@ -32,12 +32,12 @@ Click the button below to add the repository:
 ::: details Adding the repo manually
 - Go to <nav to="extension-repos">
 - Select "Add" at the bottom of your screen.
-- Enter <a :href="GITHUB_EXTENSION_MIN_JSON">{{ GITHUB_EXTENSION_MIN_JSON }}</a> for Tachiyomi variants.
+- Enter <a :href="GITHUB_EXTENSION_MIN_JSON">{{ GITHUB_EXTENSION_MIN_JSON }}</a> for Mihon variants.
 - Enter <a :href="GITHUB_EXTENSION_MIN_JSON_ANI">{{ GITHUB_EXTENSION_MIN_JSON_ANI }}</a> for Aniyomi variants.
 :::
 
 ### Reinstall the extensions
-Restart Tachiyomi/Aniyomi to reload the extension list, then reinstall all extensions.
+Restart app to reload the extension list, then reinstall all extensions.
 
 ::: tip
 Go to <nav to="migrate"> to see what extensions you are missing.
@@ -58,4 +58,4 @@ If you encounter difficulties while searching for a specific series, consider:
   > Example: **3-gatsu no Lion** instead of **Sangatsu no Lion**.
 
 - If you still cannot find the series, try searching for a website's extension you've found in
-step 1 in the [Tachiyomi extensions](/extensions/) or [Aniyomi extensions](/extensions-aniyomi/) list.
+step 1 in the [Manga extensions](/extensions/) or [Anime extensions](/extensions-aniyomi/) list.

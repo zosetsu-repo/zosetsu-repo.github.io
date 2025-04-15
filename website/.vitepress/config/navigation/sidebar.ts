@@ -7,7 +7,6 @@ const sidebar: DefaultTheme.SidebarMulti = {
   '/add-repo': defaultSidebar(),
   '/extensions/': defaultSidebar(),
   '/extensions-aniyomi/': defaultSidebar(),
-  '/news': defaultSidebar(),
   '/docs/': defaultSidebar(),
 };
 
@@ -15,12 +14,12 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
   return [
     {
       items: [
-        { text: 'Tachiyomi Extensions', link: '/extensions/' }
+        { text: 'Manga Extensions', link: '/extensions/' }
       ],
     },
     {
       items: [
-        { text: 'Aniyomi Extensions', link: '/extensions-aniyomi/' }
+        { text: 'Anime Extensions', link: '/extensions-aniyomi/' }
       ],
     },
     {
