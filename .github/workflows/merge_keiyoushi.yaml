@@ -12,7 +12,7 @@ concurrency:
 jobs:
   auto-merge:
     name: Merge keiyoushi
-    if: github.repository == 'zosetsu-repo/zosetsu-repo.github.io'
+    if: github.repository == 'yuzono/yuzono.github.io'
     runs-on: ubuntu-latest
 
     steps:

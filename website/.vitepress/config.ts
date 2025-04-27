@@ -21,7 +21,7 @@ const hostname: string = env.VITE_HOSTNAME || 'http://localhost:4173';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Zosetsu",
+  title: "Yuzōnō",
   description: "An unofficial repository of extensions for Mihon, Aniyomi and variants.",
   cleanUrls: true,
   transformHead: (context) => {
@@ -38,13 +38,13 @@ export default defineConfig({
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/zosetsu-repo/',
+        link: 'https://github.com/yuzono/',
         ariaLabel: 'Project GitHub',
       },
     ],
     
     editLink: {
-      pattern: 'https://github.com/zosetsu-repo/zosetsu-repo.github.io/edit/main/website/:path',
+      pattern: 'https://github.com/yuzono/yuzono.github.io/edit/main/website/:path',
       text: 'Help us improve this page',
     },
 

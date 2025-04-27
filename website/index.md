@@ -3,11 +3,11 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: "home"
 
-title: "Zosetsu"
+title: "Yuzōnō"
 description: "Extension repository for Mihon, Aniyomi and variants."
 
 hero:
-  name: "Zosetsu"
+  name: "Yuzōnō"
   text: ""
   tagline: "Extension repository for Mihon, Aniyomi and variants"
   actions:
@@ -16,7 +16,7 @@ hero:
       link: "/docs/guides/getting-started"
     - theme: "alt"
       text: "Star the projects"
-      link: "https://github.com/zosetsu-repo"
+      link: "https://github.com/yuzono"
 
 features:
   - title: "Manga Extensions"

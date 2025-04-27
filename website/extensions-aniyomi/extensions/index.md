@@ -4,10 +4,10 @@ title: Redirecting to new extensions page
 head:
   - - meta 
     - http-equiv: refresh
-      content: 0; URL=https://zosetsu-repo.github.io/extensions-aniyomi/
+      content: 0; URL=https://yuzono.github.io/extensions-aniyomi/
   - - link
     - rel: canonical
-      href: https://zosetsu-repo.github.io/extensions-aniyomi/ 
+      href: https://yuzono.github.io/extensions-aniyomi/ 
 ---
 
 You should be redirected to the extensions listing automatically. If it doesn't

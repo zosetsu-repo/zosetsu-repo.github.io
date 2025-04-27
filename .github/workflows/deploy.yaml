@@ -43,7 +43,7 @@ jobs:
 
       - name: Build with VitePress
         run: |
-          VITE_HOSTNAME="https://zosetsu-repo.github.io" pnpm run docs:build
+          VITE_HOSTNAME="https://yuzono.github.io" pnpm run docs:build
           touch website/.vitepress/dist/.nojekyll
 
       - name: Upload artifact
