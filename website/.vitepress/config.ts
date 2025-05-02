@@ -21,7 +21,7 @@ const hostname: string = env.VITE_HOSTNAME || 'http://localhost:4173';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Yuzōnō",
+  title: "Yūzōnō",
   description: "An unofficial repository of extensions for Mihon, Aniyomi and variants.",
   cleanUrls: true,
   transformHead: (context) => {

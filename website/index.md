@@ -3,11 +3,11 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: "home"
 
-title: "Yuzōnō"
+title: "Yūzōnō"
 description: "Extension repository for Mihon, Aniyomi and variants."
 
 hero:
-  name: "Yuzōnō"
+  name: "Yūzōnō"
   text: ""
   tagline: "Extension repository for Mihon, Aniyomi and variants"
   actions:
