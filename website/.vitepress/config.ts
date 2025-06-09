@@ -41,6 +41,11 @@ export default defineConfig({
         link: 'https://github.com/yuzono/',
         ariaLabel: 'Project GitHub',
       },
+      {
+        icon: 'discord',
+        link: 'https://discord.gg/85MZhUX688',
+        ariaLabel: 'Discord Server',
+      },
     ],
     
     editLink: {
